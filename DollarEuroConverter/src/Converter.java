@@ -50,16 +50,14 @@ public class Converter {
 	}
 
 	public static double convert(double input, int inputType) {
-		// Print a message and (if the first input is one of the two valid values) the
-		// converted Value
-		switch (inputType) {
-		case 1:
+		// Convert and return the input
+		if (inputType == 1) {
 			return input * 1.34;
-		case 2:
+		}else {
 			return input / 1.34;
 		}
-		// avoid compilation problem
-		return 0;
+		
+
 	}
 
 }
